@@ -109,3 +109,16 @@ button {
 		flex-direction: column;
 	}
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% 80% 10%;
+  grid-template-areas: "grid-header" "grid-body" "grid-footer";
+}
+
+.grid-header { grid-area: grid-header; }
+
+.grid-body { grid-area: grid-body; }
+
+.grid-footer { grid-area: grid-footer; }
